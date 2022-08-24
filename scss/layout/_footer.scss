@@ -1,0 +1,86 @@
+.footer {
+    background-color: $main-color;
+    padding: 100px 0px 50px 0px;
+    color: white;
+    .col-footer {
+        margin-bottom: 50px;
+        .title-footer {
+            @include styleText($fs-5,$fw-4,white);
+            margin-bottom: 30px;
+        }
+        .info-content {
+            .line-content {
+                @include styleText(0.9em,$fw-1,white);
+                margin-bottom: 10px;
+                span {
+                    margin-left: 0.8em;
+                }
+            }
+        }
+        .social-media {
+            line-height: 2;
+            a {
+                color: white;
+                margin-right: 8px;
+                transition: 0.3s;
+                &:hover {
+                    color:black;
+                }
+            }
+        }
+        .quick-links {
+            a {
+                @include styleText(0.9em,$fw-1,white);
+                text-decoration: none;
+                padding: 7px 0px;
+                position: relative;
+                transition: 0.3s;
+                opacity: 1;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 70px;
+                    height: 1px;
+                    background-color:beige;
+                    opacity: 0.6;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .btnGroup {
+            input {
+                display: block;
+                border-radius: 50px;
+                text-align: center;
+                background-color: $main-color;
+                height: 40px;
+                margin-bottom: 30px;
+                border: transparent;
+                &::placeholder {
+                    @include styleText(0.9em,$fw-1,white)
+                }
+            }
+            button {
+                display: block;
+                border-radius: 50px;
+                text-align: center;
+                background-color: white;
+                height: 40px;
+                width: 200px;
+                margin-bottom: 30px;
+                border: transparent;
+                @include styleText(0.8em,$fw-3,#181818);
+                transition: 0.3s;
+                &:hover {
+                    background-color: $main-color;
+                    color: white;
+                    border: 1px solid white;
+                }
+            }
+        }
+    };
+}

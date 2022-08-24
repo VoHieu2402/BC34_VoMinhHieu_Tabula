@@ -1,0 +1,9 @@
+.aboutUs {
+    padding: 150px 0;
+    h3 {
+        @include styleText($fs-2,$fw-3,$main-color);
+    }
+    h2 {
+        @include styleText($fs-3,$fw-4,black);
+    }
+}

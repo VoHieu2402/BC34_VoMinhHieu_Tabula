@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hov-change-color:hover {
+  background-color: transparent;
+}
+.hov-change-color:hover a {
+  color: #b61984;
+}
+
+header {
+  box-shadow: 0 2px 4px #e2ebfc;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
+header .navTabula .navbar-brand {
+  width: 25%;
+}
+header .navTabula .navbar-brand img {
+  width: 80px;
+}
+header .navTabula .navbar-nav .nav-item {
+  font-size: 13px;
+}
+header .navTabula .navbar-nav .nav-item .nav-link {
+  margin-right: 30px;
+  font-weight: 600;
+  color: #656774;
+  position: relative;
+}
+header .navTabula .navbar-nav .nav-item .nav-link::after {
+  content: " ";
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  bottom: -20px;
+  margin-left: -4px;
+  left: 50%;
+  pointer-events: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #b61984;
+  transform: scale(1, 1);
+  transition: 0.3s;
+}
+header .navTabula .navbar-nav .nav-item .nav-link:hover::after {
+  opacity: 1;
+  transform: scale(1.5, 1.5);
+}
+header .navTabula .navbar-nav .nav-item .active::after {
+  content: " ";
+  opacity: 1;
+  position: absolute;
+  z-index: 5;
+  bottom: -20px;
+  margin-left: -4px;
+  left: 50%;
+  pointer-events: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #b61984;
+  transition: 0.3s;
+  transform: scale(1, 1);
+}
+header .navTabula .navbar-nav .nav-item .active:hover::after {
+  transform: scale(1.5, 1.5);
+}
+header .navTabula .navbar-nav .nav-item .btnPhone {
+  border: #b61984;
+  border-radius: 50px;
+  background-color: #b61984;
+  transition: 0.3s;
+}
+header .navTabula .navbar-nav .nav-item .btnPhone a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  border-radius: 50px;
+}
+header .navTabula .navbar-nav .nav-item .btnPhone a i {
+  margin-right: 10px;
+}
+header .navTabula .navbar-nav .nav-item .btnPhone:hover {
+  background-color: transparent;
+}
+header .navTabula .navbar-nav .nav-item .btnPhone:hover a {
+  color: #b61984;
+}
+header .navTabula .navbar-nav .nav-item .social-media {
+  margin-left: 15px;
+  line-height: 2;
+}
+header .navTabula .navbar-nav .nav-item .social-media a {
+  color: black;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+header .navTabula .navbar-nav .nav-item .social-media a:hover {
+  color: #b61984;
+}
+
+.aboutUs {
+  padding: 150px 0;
+}
+.aboutUs h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+}
+.aboutUs h2 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: black;
+}
+
+.lst-experts .ex-item {
+  padding: 20px;
+}
+.lst-experts .ex-item .image-card {
+  overflow: hidden;
+}
+.lst-experts .ex-item .image-card img {
+  transition: 0.5s;
+}
+.lst-experts .ex-item .image-card img:hover {
+  transform: scale(1.1);
+}
+.lst-experts .ex-item .cardExperts {
+  transition: 0.5s;
+}
+.lst-experts .ex-item .cardExperts .card-text h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+}
+.lst-experts .ex-item .cardExperts .card-text h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: black;
+}
+.lst-experts .ex-item .cardExperts .card-text p {
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+}
+.lst-experts .ex-item .cardExperts:hover {
+  box-shadow: 1px 6px 20px 1px #d3d3d3;
+}
+
+.contact-form {
+  margin-top: 150px;
+}
+.contact-form .img-contact {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.contact-form .form-input {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px 20px 100px 20px;
+}
+.contact-form .form-input h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 50px;
+}
+.contact-form .form-input .contact-input .btContact {
+  position: relative;
+  margin-bottom: 10px;
+}
+.contact-form .form-input .contact-input .btContact .icon {
+  position: absolute;
+  padding: 10px;
+  color: #b61984;
+  min-width: 50px;
+  text-align: center;
+}
+.contact-form .form-input .contact-input .btContact .input-field {
+  width: 100%;
+  padding: 5px 0px 5px 40px;
+  border-radius: 50px;
+  border: 0.5px solid #d3d3d3;
+}
+.contact-form .form-input .contact-input .btContact textarea {
+  border-radius: 20px !important;
+}
+.contact-form .form-input .btnContact {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  background-color: #b61984;
+  border: 1px solid #b61984;
+  border-radius: 30px;
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+.contact-form .form-input .btnContact:hover {
+  color: #b61984;
+  background-color: white;
+  border: 1px solid #b61984;
+}
+
+.footer {
+  background-color: #b61984;
+  padding: 100px 0px 50px 0px;
+  color: white;
+}
+.footer .col-footer {
+  margin-bottom: 50px;
+}
+.footer .col-footer .title-footer {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+}
+.footer .col-footer .info-content .line-content {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+.footer .col-footer .info-content .line-content span {
+  margin-left: 0.8em;
+}
+.footer .col-footer .social-media {
+  line-height: 2;
+}
+.footer .col-footer .social-media a {
+  color: white;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+.footer .col-footer .social-media a:hover {
+  color: black;
+}
+.footer .col-footer .quick-links a {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  padding: 7px 0px;
+  position: relative;
+  transition: 0.3s;
+  opacity: 1;
+}
+.footer .col-footer .quick-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background-color: beige;
+  opacity: 0.6;
+}
+.footer .col-footer .quick-links a:hover {
+  opacity: 0.7;
+}
+.footer .col-footer .btnGroup input {
+  display: block;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #b61984;
+  height: 40px;
+  margin-bottom: 30px;
+  border: transparent;
+}
+.footer .col-footer .btnGroup input::-moz-placeholder {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: white;
+}
+.footer .col-footer .btnGroup input:-ms-input-placeholder {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: white;
+}
+.footer .col-footer .btnGroup input::placeholder {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: white;
+}
+.footer .col-footer .btnGroup button {
+  display: block;
+  border-radius: 50px;
+  text-align: center;
+  background-color: white;
+  height: 40px;
+  width: 200px;
+  margin-bottom: 30px;
+  border: transparent;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #181818;
+  transition: 0.3s;
+}
+.footer .col-footer .btnGroup button:hover {
+  background-color: #b61984;
+  color: white;
+  border: 1px solid white;
+}/*# sourceMappingURL=main.css.map */
