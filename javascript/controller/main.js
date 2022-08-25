@@ -6,22 +6,13 @@ function getEle(id) {
 
 // get data
 function fetchData() {
-    // pending and show loading
-    // getEle("loading").style.display = "block";
-
     newData
         .getUsers()
-        // Thành công thì then, trả về data
         .then(function(result) {
-            // hide loading
             renderHTML(result.data);
-            // getEle("loading").style.display = "none";
         })
-        // Request thất bại thì catch error
         .catch(function(error) {
-            // hide loading
             console.log(error);
-            // getEle("loading").style.display = "none";
         })
 }
 
